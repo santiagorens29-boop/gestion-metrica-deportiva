@@ -14,21 +14,21 @@ Aplicación de escritorio multiplataforma desarrollada para la administración c
 El sistema está construido bajo una arquitectura de escritorio moderna, segura y ligera, separando la interfaz de usuario de la lógica nativa y la persistencia relacional:
 
 * **Framework Desktop:** [Tauri](https://tauri.app/) (Core en Rust para interacción nativa con el sistema operativo).
-* **Frontend Web:** [Vue 3](https://vuejs.org/) (Composition API) con [Tailwind CSS](https://tailwindcss.com/)[cite: 3].
+* **Frontend Web:** [Vue 3](https://vuejs.org/) (Composition API) con [Tailwind CSS](https://tailwindcss.com/).
 * **Base de Datos:** [SQLite](https://www.sqlite.org/) embebida localmente mediante `@tauri-apps/plugin-sql`.
-* **Visualización de Datos:** [Chart.js](https://www.chartjs.org/) para curvas evolutivas de rendimiento[cite: 3].
-* **Generación de Reportes:** [jsPDF](https://github.com/parallax/jsPDF) integrado con diálogos nativos del sistema operativo (`@tauri-apps/plugin-dialog` y `@tauri-apps/plugin-fs`)[cite: 3].
+* **Visualización de Datos:** [Chart.js](https://www.chartjs.org/) para curvas evolutivas de rendimiento.
+* **Generación de Reportes:** [jsPDF](https://github.com/parallax/jsPDF) integrado con diálogos nativos del sistema operativo (`@tauri-apps/plugin-dialog` y `@tauri-apps/plugin-fs`).
 
 ---
 
 ## 🚀 Características Principales
 
-* **Gestión Integral de Atletas (CRUD):** Alta, modificación, consulta y filtrado de deportistas con ficha filiatoria completa, nivel de compromiso y observaciones[cite: 3].
-* **Catálogo de Disciplinas y Pruebas:** Parametrización de deportes (Natación, Atletismo, Kayak) y pruebas específicas con métricas adaptativas (tiempo, distancia, peso)[cite: 3].
-* **Registro de Marcas y Evaluaciones:** Carga cronológica de resultados técnicos con cálculo de mejor marca según la polaridad de la métrica[cite: 3].
-* **Dashboard y Curvas Evolutivas:** Gráficos dinámicos de rendimiento y estadísticas acumuladas por atleta y disciplina[cite: 3].
-* **Exportación de Informes PDF:** Generación de fichas técnicas individuales con guardado directo mediante la ventana nativa "Guardar como..." de Windows[cite: 3].
-* **Empaquetado Autónomo:** Distribución mediante instalador `.exe` (NSIS) ejecutable de forma totalmente local y sin dependencias de servidor externo[cite: 2, 3].
+* **Gestión Integral de Atletas (CRUD):** Alta, modificación, consulta y filtrado de deportistas con ficha filiatoria completa, nivel de compromiso y observaciones.
+* **Catálogo de Disciplinas y Pruebas:** Parametrización de deportes (Natación, Atletismo, Kayak) y pruebas específicas con métricas adaptativas (tiempo, distancia, peso).
+* **Registro de Marcas y Evaluaciones:** Carga cronológica de resultados técnicos con cálculo de mejor marca según la polaridad de la métrica.
+* **Dashboard y Curvas Evolutivas:** Gráficos dinámicos de rendimiento y estadísticas acumuladas por atleta y disciplina.
+* **Exportación de Informes PDF:** Generación de fichas técnicas individuales con guardado directo mediante la ventana nativa "Guardar como..." de Windows.
+* **Empaquetado Autónomo:** Distribución mediante instalador `.exe` (NSIS) ejecutable de forma totalmente local y sin dependencias de servidor externo.
 
 ---
 
@@ -47,21 +47,36 @@ Para ejecutar o compilar el proyecto desde el código fuente se requiere:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/santiagorens29-boop/gestion-deportiva.git](https://github.com/santiagorens29-boop/gestion-deportiva.git)
+   git clone https://github.com/santiagorens29-boop/gestion-deportiva.git
    cd gestion-deportiva
+   ```
 
-## Instalar dependencias del frontend:
-npm install
+2. **Instalar dependencias del frontend:**
+   ```bash
+   npm install
+   ```
 
-## Ejecutar la aplicación en modo desarrollo:
-npm run tauri dev
+3. **Ejecutar la aplicación en modo desarrollo:**
+   ```bash
+   npm run tauri dev
+   ```
+
+---
 
 ## 📦 Compilación y Generación del Ejecutable (.exe)
+
+```bash
 npm run tauri build
-* **El instalador ejecutable .exe se generará automáticamente en la ruta:
-* **src-tauri/target/release/bundle/nsis/
+```
+
+* El instalador ejecutable `.exe` se generará automáticamente en la ruta:
+  `src-tauri/target/release/bundle/nsis/`
+
+---
 
 ## 📂 Estructura del Proyecto
+
+```text
 ├── src/
 │   ├── components/      # Componentes de UI (Sidebar, Modales, Headers)
 │   ├── views/           # Vistas principales (Dashboard, Atletas, Marcas, Disciplinas)
@@ -74,10 +89,14 @@ npm run tauri build
 │   └── tauri.conf.json  # Configuración principal de empaquetado Tauri
 ├── docs/                # Diagramas UML y documentación técnica académica
 └── README.md
+```
+
+---
 
 ## 🎥 Demo y Documentación Académica
-Demo Pre-grabada (Video): [Enlace al video de la demostración] (A incorporar en Noviembre)   
-Institución: Universidad de Belgrano   
-Carrera: Tecnicatura en Programación / Ingeniería Informática
-Materia: Prácticas de Laboratorio   
-Autor / Desarrollador: Santiago Rens (santiagorens29@gmail.com)
+
+* **Demo Pre-grabada (Video):** [Enlace al video de la demostración] (A incorporar en Noviembre)
+* **Institución:** Universidad de Belgrano
+* **Carrera:** Tecnicatura en Programación / Ingeniería Informática
+* **Materia:** Prácticas de Laboratorio
+* **Autor / Desarrollador:** Santiago Rens (santiagorens29@gmail.com)
