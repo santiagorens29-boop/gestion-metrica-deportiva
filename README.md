@@ -32,6 +32,22 @@ El sistema está construido bajo una arquitectura de escritorio moderna, segura 
 
 ---
 
+## 📸 Capturas del Sistema
+
+### Dashboard Principal
+![Dashboard Principal](docs/capturas/captura1.png)
+
+### Padrón de Atletas
+![Padrón de Atletas](docs/capturas/captura2.png)
+
+### Gestión de Disciplinas y Subdisciplinas
+![Gestión de Disciplinas y Subdisciplinas](docs/capturas/captura3.png)
+
+### Curvas Evolutivas y Gráficos de Rendimiento
+![Gráfico de Rendimiento](docs/capturas/captura4.png)
+
+---
+
 ## 📋 Requisitos del Entorno de Desarrollo
 
 Para ejecutar o compilar el proyecto desde el código fuente se requiere:
@@ -87,7 +103,9 @@ npm run tauri build
 │   ├── src/             # Código fuente en Rust (main.rs, lib.rs)
 │   ├── capabilities/    # Permisos de plugins nativos (dialog, fs, sql)
 │   └── tauri.conf.json  # Configuración principal de empaquetado Tauri
-├── docs/                # Diagramas UML y documentación técnica académica
+├── docs/
+│   ├── capturas/        # Capturas de pantalla del sistema
+│   └── uml/             # Diagramas UML y documentación técnica académica
 └── README.md
 ```
 
@@ -95,7 +113,7 @@ npm run tauri build
 
 ## 🎥 Demo y Documentación Académica
 
-* **Demo Pre-grabada (Video):** [Enlace al video de la demostración] (A incorporar en Noviembre)
+* **Demo Pre-grabada (Video):** [Ver demostración funcional del sistema](https://drive.google.com/file/d/1CuJSESZ_qIMZ25vF822nEwPyBqHpgphl/view?usp=sharing)
 * **Institución:** Universidad de Belgrano
 * **Carrera:** Tecnicatura en Programación / Ingeniería Informática
 * **Materia:** Prácticas de Laboratorio
